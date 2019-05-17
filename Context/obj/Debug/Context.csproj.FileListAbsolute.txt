@@ -1,0 +1,6 @@
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\bin\Debug\Context.dll
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\bin\Debug\Context.pdb
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.csprojAssemblyReference.cache
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.dll
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.pdb

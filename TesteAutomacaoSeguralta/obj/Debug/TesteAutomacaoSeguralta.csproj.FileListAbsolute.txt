@@ -1,0 +1,14 @@
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\TesteAutomacaoSeguralta.exe.config
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\TesteAutomacaoSeguralta.exe
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\TesteAutomacaoSeguralta.pdb
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\Context.dll
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\WebDriver.dll
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\WebDriver.Support.dll
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\Context.pdb
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\WebDriver.xml
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\bin\Debug\WebDriver.Support.xml
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.csprojAssemblyReference.cache
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.csproj.CoreCompileInputs.cache
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.csproj.CopyComplete
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.exe
+C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.pdb
