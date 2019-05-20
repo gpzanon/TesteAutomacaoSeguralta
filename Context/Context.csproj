@@ -51,9 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contato.cs" />
-    <Compile Include="Context.cs" />
+    <Compile Include="ContextDB.cs" />
     <Compile Include="Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatusMensagemEnviada.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Context;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -11,13 +12,18 @@ namespace TesteAutomacaoSeguralta
 {
     class Program
     {
+        ContextDB dataBase = new ContextDB("SUA CONNECTION STRING AQUI");
+
         static void Main(string[] args)
         {
             string nomeCompleto = "Alexandre Videschi Marques";
             string email = "alexandre.ti@seguralta.com.br";
-            DateTime dataAniversario = new DateTime(1995, 05, 15);
-            string nomePreferencial = "Alexandre";
-            bool manterInformado = false;
+            int CEP = 15015700;
+            string estado = "São Paulo";
+            string cidade = "São José do Rio Preto";
+            string assunto = "Teste projeto Seguralta";
+            string telefone = "017997777777";
+            string mensagem = "Teste do projeto da Seguralta";
 
             //Codificar aqui e excluir essa linha para não interferir no teste.
             AutomatizarGrid(); //Linha de exemplo
@@ -41,7 +47,7 @@ namespace TesteAutomacaoSeguralta
             //Navegando para o site
             driver.Navigate().GoToUrl("https://codepen.io/koalyptus/embed/wKBOLp?height=446&theme-id=0&slug-hash=wKBOLp&default-tab=result&user=koalyptus&name=cp_embed_1");
 
-            //Trocando o contexto para o IFrame dos elementos para interação
+            //Trocando o contexto para o IFrame dos elementos para interação, no exemplo do formulário da Seguralta não será necessário
             driver.SwitchTo().Frame(0);
 
             //Definindo os valores

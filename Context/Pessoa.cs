@@ -13,6 +13,7 @@ namespace Context
         public Pessoa()
         {
             Contato = new HashSet<Contato>();
+            StatusMensagemEnviada = new HashSet<StatusMensagemEnviada>();
         }
 
         public int Id { get; set; }
@@ -20,12 +21,16 @@ namespace Context
         [StringLength(300)]
         public string Nome { get; set; }
 
-        [StringLength(150)]
-        public string NomePreferencial { get; set; }
+        [StringLength(300)]
+        public string Cidade { get; set; }
 
-        public bool? ManterInformado { get; set; }
+        [StringLength(150)]
+        public string Estado { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Contato> Contato { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<StatusMensagemEnviada> StatusMensagemEnviada { get; set; }
     }
 }
