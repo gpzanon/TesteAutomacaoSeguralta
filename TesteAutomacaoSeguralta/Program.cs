@@ -1,5 +1,4 @@
-﻿using Context;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -12,7 +11,6 @@ namespace TesteAutomacaoSeguralta
 {
     class Program
     {
-        ContextDB dataBase = new ContextDB("SUA CONNECTION STRING AQUI");
 
         static void Main(string[] args)
         {
@@ -46,9 +44,6 @@ namespace TesteAutomacaoSeguralta
 
             //Navegando para o site
             driver.Navigate().GoToUrl("https://codepen.io/koalyptus/embed/wKBOLp?height=446&theme-id=0&slug-hash=wKBOLp&default-tab=result&user=koalyptus&name=cp_embed_1");
-
-            //Trocando o contexto para o IFrame dos elementos para interação, no exemplo do formulário da Seguralta não será necessário
-            driver.SwitchTo().Frame(0);
 
             //Definindo os valores
 

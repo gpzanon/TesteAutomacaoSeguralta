@@ -8,12 +8,13 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>TesteAutomacaoSeguralta</RootNamespace>
     <AssemblyName>TesteAutomacaoSeguralta</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -58,12 +59,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Context\Context.csproj">
-      <Project>{01684d99-7cdf-4e39-81a2-1161fcd4405a}</Project>
-      <Name>Context</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="script.sql" />
