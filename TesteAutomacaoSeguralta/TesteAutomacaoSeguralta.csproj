@@ -68,9 +68,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="script.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Context\Context.csproj">
       <Project>{01684d99-7cdf-4e39-81a2-1161fcd4405a}</Project>
       <Name>Context</Name>
