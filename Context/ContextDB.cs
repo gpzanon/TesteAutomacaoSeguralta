@@ -4,6 +4,7 @@ namespace Context
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using System.Collections.Generic;
 
     public class ContextDB : DbContext
     {
