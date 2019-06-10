@@ -1,36 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+
 namespace Context
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    [Table("Contato")]
-    public partial class Contato
+    public class Contato
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Contato()
-        {
-            StatusMensagemEnviada = new HashSet<StatusMensagemEnviada>();
-        }
-
         public int Id { get; set; }
-
-        public int? Pessoa { get; set; }
-
-        [StringLength(150)]
+        public IList<Pessoa> Pessoa { get; set; }
+        [MaxLength(150)]
         public string Email { get; set; }
-
-        [StringLength(3)]
+        [MaxLength(3)]
         public string DDD { get; set; }
-
-        [StringLength(15)]
+        [MaxLength(15)]
         public string Telefone { get; set; }
-
-        public virtual Pessoa Pessoa1 { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<StatusMensagemEnviada> StatusMensagemEnviada { get; set; }
     }
 }
