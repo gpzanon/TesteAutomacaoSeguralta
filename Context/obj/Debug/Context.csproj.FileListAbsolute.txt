@@ -4,3 +4,17 @@ C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Deb
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.dll
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.pdb
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\Context.dll.config
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\Context.dll
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\Context.pdb
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\EntityFramework.dll
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\EntityFramework.xml
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csprojAssemblyReference.cache
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.CopyComplete
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.dll
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.pdb
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.Migrations.ModeloInicial.resources
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.GenerateResource.cache
