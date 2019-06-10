@@ -10,8 +10,8 @@ namespace Context
     public class StatusMensagemEnviada
     {
         public int Id { get; set; }
-        public IList<Pessoa> Pessoa { get; set; }
-        public IList<Contato> Contato { get; set; }
+        public Pessoa Pessoa { get; set; }
+        public Contato Contato { get; set; }
         [MaxLength(1000)]
         public string Assunto { get; set; }
         public string MensagemEnviada { get; set; }

@@ -10,7 +10,7 @@ namespace Context
     public class Contato
     {
         public int Id { get; set; }
-        public IList<Pessoa> Pessoa { get; set; }
+        public Pessoa Pessoa { get; set; }
         [MaxLength(150)]
         public string Email { get; set; }
         [MaxLength(3)]

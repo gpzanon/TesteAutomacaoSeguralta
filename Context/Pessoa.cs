@@ -16,5 +16,7 @@ namespace Context
         public string Cidade { get; set; }
         [MaxLength(150)]
         public string Estado { get; set; }
+        [MaxLength(8)]
+        public string CEP { get; set; }
     }
 }

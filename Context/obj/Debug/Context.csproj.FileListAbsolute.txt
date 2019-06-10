@@ -16,5 +16,5 @@ C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.c
 C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.CopyComplete
 C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.dll
 C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.pdb
-C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.Migrations.ModeloInicial.resources
-C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.GenerateResource.cache
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.Migrations.ModeloInicial.resources
+C:\Users\joaov\Source\Repos\TesteAutomacaoSeguralta1\Context\obj\Debug\Context.csproj.GenerateResource.cache

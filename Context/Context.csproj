@@ -53,9 +53,9 @@
   <ItemGroup>
     <Compile Include="Contato.cs" />
     <Compile Include="ContextDB.cs" />
-    <Compile Include="Migrations\201906100100169_ModeloInicial.cs" />
-    <Compile Include="Migrations\201906100100169_ModeloInicial.Designer.cs">
-      <DependentUpon>201906100100169_ModeloInicial.cs</DependentUpon>
+    <Compile Include="Migrations\201906100341444_ModeloInicial.cs" />
+    <Compile Include="Migrations\201906100341444_ModeloInicial.Designer.cs">
+      <DependentUpon>201906100341444_ModeloInicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Pessoa.cs" />
@@ -67,8 +67,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906100100169_ModeloInicial.resx">
-      <DependentUpon>201906100100169_ModeloInicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906100341444_ModeloInicial.resx">
+      <DependentUpon>201906100341444_ModeloInicial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

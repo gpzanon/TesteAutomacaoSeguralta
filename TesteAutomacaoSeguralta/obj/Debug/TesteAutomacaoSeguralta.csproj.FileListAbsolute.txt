@@ -28,3 +28,6 @@ C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin
 C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin\Debug\EntityFramework.xml
 C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\obj\Debug\TesteAutomacaoSeguralta.csprojAssemblyReference.cache
+C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin\Debug\Context.dll
+C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin\Debug\Context.pdb
+C:\Users\joaov\source\repos\TesteAutomacaoSeguralta1\TesteAutomacaoSeguralta\bin\Debug\Context.dll.config
