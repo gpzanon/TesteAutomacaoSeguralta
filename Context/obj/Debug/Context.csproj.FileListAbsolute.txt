@@ -4,3 +4,15 @@ C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Deb
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.dll
 C:\Users\alexandre.videschi\source\repos\TesteAutomacaoSeguralta\Context\obj\Debug\Context.pdb
+E:\Testes\Context\bin\Debug\Context.dll.config
+E:\Testes\Context\bin\Debug\Context.dll
+E:\Testes\Context\bin\Debug\Context.pdb
+E:\Testes\Context\bin\Debug\EntityFramework.dll
+E:\Testes\Context\bin\Debug\EntityFramework.SqlServer.dll
+E:\Testes\Context\bin\Debug\EntityFramework.xml
+E:\Testes\Context\bin\Debug\EntityFramework.SqlServer.xml
+E:\Testes\Context\obj\Debug\Context.csprojAssemblyReference.cache
+E:\Testes\Context\obj\Debug\Context.csproj.CoreCompileInputs.cache
+E:\Testes\Context\obj\Debug\Context.csproj.CopyComplete
+E:\Testes\Context\obj\Debug\Context.dll
+E:\Testes\Context\obj\Debug\Context.pdb
