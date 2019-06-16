@@ -7,8 +7,8 @@ namespace Context
 
     public partial class ContextDB : DbContext
     {
-        public ContextDB(string connectionString)
-            : base(connectionString)
+        public ContextDB()
+            : base("name=Conexao")
         {
         }
 
@@ -45,6 +45,10 @@ namespace Context
 
             modelBuilder.Entity<Pessoa>()
                 .Property(e => e.Estado)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Pessoa>()
+                .Property(e => e.Cep)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Pessoa>()

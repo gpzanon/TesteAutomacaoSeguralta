@@ -27,6 +27,9 @@ namespace Context
         [StringLength(150)]
         public string Estado { get; set; }
 
+        [StringLength(8)]
+        public string Cep { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Contato> Contato { get; set; }
 

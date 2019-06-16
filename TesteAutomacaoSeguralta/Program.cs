@@ -12,56 +12,67 @@ namespace TesteAutomacaoSeguralta
 {
     class Program
     {
-        ContextDB dataBase = new ContextDB("SUA CONNECTION STRING AQUI");
+        ContextDB dataBase = new ContextDB();
 
         static void Main(string[] args)
         {
-            string nomeCompleto = "Alexandre Videschi Marques";
-            string email = "alexandre.ti@seguralta.com.br";
-            int CEP = 15015700;
-            string estado = "São Paulo";
-            string cidade = "São José do Rio Preto";
-            string assunto = "Teste projeto Seguralta";
-            string telefone = "017997777777";
-            string mensagem = "Teste do projeto da Seguralta";
+            AutomatizarGrid();
 
-            //Codificar aqui e excluir essa linha para não interferir no teste.
-            AutomatizarGrid(); //Linha de exemplo
+            Console.ReadKey();
         }
 
         private static void AutomatizarGrid()
         {
-            //Inicia uma nova instância do Google Chrome com o Selenium
-            ChromeDriverService service = ChromeDriverService.CreateDefaultService();
-            ChromeOptions chromeOption = new ChromeOptions();
+            try
+            {
+                using (var dB = new ContextDB())
+                {
+                    var listaMensagem = dB.StatusMensagemEnviada.Include("Pessoa1").Include("Contato1");
 
-            //Desativando a mensagem de que o software está sendo automatizado por um framework de testes
-            chromeOption.AddArguments("disable-infobars");
+                    foreach (var item in listaMensagem)
+                    {
+                        var pessoa = item.Pessoa1;
 
-            //Iniciando o Chrome
-            ChromeDriver driver = new ChromeDriver(service, chromeOption);
+                        var contato = item.Contato1;
 
-            //Maximizando a janela
-            driver.Manage().Window.Maximize();
+                        if (pessoa != null && contato != null)
+                        {
+                            ChromeDriverService service = ChromeDriverService.CreateDefaultService();
 
-            //Navegando para o site
-            driver.Navigate().GoToUrl("https://codepen.io/koalyptus/embed/wKBOLp?height=446&theme-id=0&slug-hash=wKBOLp&default-tab=result&user=koalyptus&name=cp_embed_1");
+                            ChromeOptions chromeOption = new ChromeOptions();
 
-            //Trocando o contexto para o IFrame dos elementos para interação, no exemplo do formulário da Seguralta não será necessário
-            driver.SwitchTo().Frame(0);
+                            chromeOption.AddArguments("disable-infobars");
+                            ChromeDriver driver = new ChromeDriver(service, chromeOption);
+                            driver.Manage().Window.Maximize();
+                            driver.Navigate().GoToUrl("http://seguralta.com.br/site/contato");
+                            driver.FindElement(By.Id("name")).SendKeys(pessoa.Nome);
+                            driver.FindElement(By.Id("email")).SendKeys(contato.Email);
+                            driver.FindElement(By.Id("cep")).Click();
+                            driver.FindElement(By.Id("cep")).SendKeys(Convert.ToString(pessoa.Cep));
+                            driver.FindElement(By.Id("estado")).SendKeys(pessoa.Estado);
+                            System.Threading.Thread.Sleep(5000);
+                            driver.FindElement(By.Id("cidade")).SendKeys(pessoa.Cidade);
+                            driver.FindElement(By.Id("assunto")).SendKeys(item.Assunto);
+                            driver.FindElement(By.Id("telefone")).Click();
+                            driver.FindElement(By.Id("telefone")).SendKeys(contato.DDD + contato.Telefone);
+                            driver.FindElement(By.Id("mensagem")).SendKeys(item.MensagemEnviada);
+                            driver.FindElement(By.CssSelector("input[type = 'submit']")).Click();
 
-            //Definindo os valores
+                            var status = new StatusMensagemEnviada();
+                            status = item;
+                            status.RetornoSite = driver.FindElement(By.ClassName("col-md-8")).Text;             
 
-            driver.FindElement(By.Id("flt0_demo")).SendKeys("Benin");
-            new SelectElement(driver.FindElement(By.CssSelector("#demo > thead > tr.fltrow > td:nth-child(4) > select"))).SelectByValue(">0 && <=25000");
-            driver.FindElement(By.Id("flt5_demo")).SendKeys("190");
-            driver.FindElement(By.Id("flt5_demo")).SendKeys(Keys.Enter);
+                            driver.Quit();
+                        }
+                    }
 
-            //Obtendo valor
-            string year = driver.FindElement(By.CssSelector("#demo > tbody > tr.odd > td:nth-child(3)")).Text;
+                    dB.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
 
-            //Printando valor
-            Console.WriteLine("O ano é: " + year);
+            }
         }
     }
 }
