@@ -50,12 +50,12 @@ Confortável com a responsabilidade de criar, gerir e publicar aplicações.
 
 
 ### Diferenciais
-- Criar uma validações de erros, caso o dado não exista ou campo do formulário não existir.
+- Criar validações de erros, caso o dado não exista ou campo do formulário não existir.
 - Validações se os campos foram preenchidos corretamente.
 - Boa documentação de código e de serviços.
 
 ---
-Em caso de dúvidas, envie um email para [caio.yonashiro@grupozanon.com.br](mailto:caio.yonashiro@grupozanon.com.br).
+Em caso de dúvidas, envie um email para [murilo.amaral@grupozanon.com.br](mailto:murilo.amaral@grupozanon.com.br).
 
 
 **Um dos nossos pilares é a valorização das pessoas e temos orgulho de dizer que somos uma empresa que apoia a diversidade e inclusão. Sendo assim, consideramos todos os candidatos para as nossas oportunidades, independente de raça, cor, religião, gênero, identidade de gênero, nacionalidade, deficiência, ascendência ou idade.**
