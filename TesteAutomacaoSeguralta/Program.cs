@@ -16,8 +16,8 @@ namespace TesteAutomacaoSeguralta
 
         static void Main(string[] args)
         {
-            string nomeCompleto = "Alexandre Videschi Marques";
-            string email = "alexandre.ti@seguralta.com.br";
+            string nomeCompleto = "Teste Automação";
+            string email = "";
             int CEP = 15015700;
             string estado = "São Paulo";
             string cidade = "São José do Rio Preto";
@@ -51,7 +51,6 @@ namespace TesteAutomacaoSeguralta
             driver.SwitchTo().Frame(0);
 
             //Definindo os valores
-
             driver.FindElement(By.Id("flt0_demo")).SendKeys("Benin");
             new SelectElement(driver.FindElement(By.CssSelector("#demo > thead > tr.fltrow > td:nth-child(4) > select"))).SelectByValue(">0 && <=25000");
             driver.FindElement(By.Id("flt5_demo")).SendKeys("190");
