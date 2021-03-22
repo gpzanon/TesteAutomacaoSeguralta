@@ -12,23 +12,9 @@ namespace TesteAutomacaoSeguralta
 {
     class Program
     {
-        ContextDB dataBase = new ContextDB("SUA CONNECTION STRING AQUI");
+        ContextDB dataBase = new ContextDB("connectionString");
 
-        static void Main(string[] args)
-        {
-            string nomeCompleto = "Teste Automação";
-            string email = "";
-            int CEP = 15015700;
-            string estado = "São Paulo";
-            string cidade = "São José do Rio Preto";
-            string assunto = "Teste projeto Seguralta";
-            string telefone = "017997777777";
-            string mensagem = "Teste do projeto da Seguralta";
-
-            //Codificar aqui e excluir essa linha para não interferir no teste.
-            AutomatizarGrid(); //Linha de exemplo
-        }
-
+       
         private static void AutomatizarGrid()
         {
             //Inicia uma nova instância do Google Chrome com o Selenium
@@ -43,24 +29,76 @@ namespace TesteAutomacaoSeguralta
 
             //Maximizando a janela
             driver.Manage().Window.Maximize();
-
+            ContextDB dataBase = new ContextDB("connectionString");
             //Navegando para o site
-            driver.Navigate().GoToUrl("https://codepen.io/koalyptus/embed/wKBOLp?height=446&theme-id=0&slug-hash=wKBOLp&default-tab=result&user=koalyptus&name=cp_embed_1");
-
+            driver.Navigate().GoToUrl("https://seguralta.com.br/site/contato");
             //Trocando o contexto para o IFrame dos elementos para interação, no exemplo do formulário da Seguralta não será necessário
-            driver.SwitchTo().Frame(0);
+            var mensagem = dataBase.StatusMensagemEnviada.Include("Pessoa").Include("Contato");
 
-            //Definindo os valores
-            driver.FindElement(By.Id("flt0_demo")).SendKeys("Benin");
-            new SelectElement(driver.FindElement(By.CssSelector("#demo > thead > tr.fltrow > td:nth-child(4) > select"))).SelectByValue(">0 && <=25000");
-            driver.FindElement(By.Id("flt5_demo")).SendKeys("190");
-            driver.FindElement(By.Id("flt5_demo")).SendKeys(Keys.Enter);
+            foreach (var msg in mensagem)
+            {
+                var pessoa = msg.Pessoa1;
 
-            //Obtendo valor
-            string year = driver.FindElement(By.CssSelector("#demo > tbody > tr.odd > td:nth-child(3)")).Text;
+                var contato = msg.Contato1;
 
-            //Printando valor
-            Console.WriteLine("O ano é: " + year);
+                if (pessoa != null && contato != null)
+                {
+                    driver.FindElement(By.Id("name")).Click();
+                    driver.FindElement(By.Id("email")).Click();
+                    driver.FindElement(By.Id("cep")).Click();
+                    driver.FindElement(By.Id("estado")).Click();
+                    new SelectElement(driver.FindElement(By.Id("estado"))).SelectByText("Tocantins");
+                    driver.FindElement(By.Id("estado")).Click();
+                    driver.FindElement(By.Id("cidade")).Click();
+                    driver.FindElement(By.Id("estado")).Click();
+                    new SelectElement(driver.FindElement(By.Id("estado"))).SelectByText("São Paulo");
+                    driver.FindElement(By.Id("estado")).Click();
+                    driver.FindElement(By.Id("cidade")).Click();
+                    new SelectElement(driver.FindElement(By.Id("cidade"))).SelectByText("São José do Rio Preto");
+                    driver.FindElement(By.Id("cidade")).Click();
+                    driver.FindElement(By.Id("assunto")).Click();
+                    driver.FindElement(By.Id("assunto")).Clear();
+                    driver.FindElement(By.Id("assunto")).SendKeys("Teste1");
+                    driver.FindElement(By.Id("telefone")).Click();
+                    driver.FindElement(By.Id("mensagem")).Click();
+                    driver.FindElement(By.Id("mensagem")).Clear();
+                    driver.FindElement(By.Id("mensagem")).SendKeys("Teste de automação");
+                    driver.FindElement(By.Id("telefone")).Click();
+
+                    var status = new StatusMensagemEnviada();
+
+
+                    driver.Quit();
+                    dataBase.SaveChanges();
+                }
+            }
+             private bool IsElementPresent(By by)
+        {
+            try
+            {
+                driver.FindElement(by);
+                return true;
+            }
+            catch (NoSuchElementException)
+            {
+                return false;
+            }
         }
+        
+        private bool IsAlertPresent()
+        {
+            try
+            {
+                driver.SwitchTo().Alert();
+                return true;
+            }
+            catch (NoAlertPresentException)
+            {
+                return false;
+            }
+        }
+
+        }
+
     }
 }
